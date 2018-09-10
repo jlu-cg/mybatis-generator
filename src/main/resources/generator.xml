@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generator>
+	<!-- <jdbcType dbType="mysql" driverClass="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:21000/garden?useUnicode=true&amp;characterEncoding=UTF-8" 
+		userName="root" password="wd1234"></jdbcType> -->
+	<jdbcType dbType="mysql" driverClass="com.mysql.cj.jdbc.Driver" url="jdbc:mysql://localhost:31100/data-center?useUnicode=true&amp;characterEncoding=UTF-8" 
+		userName="root" password="123456"></jdbcType>
+	<package>
+		<mapperXml packageName="mapper"/>
+		<serviceClass packageName="com.emotibot.data.center.service"/>
+		<mapperClass packageName="com.emotibot.data.center.mapper"/>
+		<bean packageName="com.emotibot.data.center.bean"/>
+	</package>
+	<schema name="data-center">
+		<!-- <table dbName="RULE_MODULE"></table>
+		<table dbName="RULE_PATTERN"></table>
+		<table dbName="RULE_MODULE_LOG"/>
+		<table dbName="RULE_PATTERN_LOG"/>
+		<table dbName="UPDATE_RECORD"/>
+		<table dbName="UPDATE_RECORD_HISTORY"/>
+		<table dbName="QUARTZ_JOB_DETAIL"/>
+    <table dbName="CONFIG"/>
+    <table dbName="CONFIG_LOG"/>
+    <table dbName="TMP_NER_BASE"/>
+    <table dbName="NER_BASE"/>
+    <table dbName="NER_LIST"/>
+    <table dbName="TMP_COMPANY_NER"/>
+    <table dbName="TMP_FUND_NER"/>
+    <table dbName="TMP_MANAGER_NER"/>
+    <table dbName="CONFIG"/>
+    <table dbName="CONFIG_LOG"/>
+    <table dbName="PIN_YIN"/>
+    <table dbName="NER_SYNONYM"/>
+    <table dbName="NER_LIST_LOG" exculdeInsertColumns="ID,CREATE_TIME" exculdeUpdateColumns="ID,CREATE_TIME"/>-->
+    <table dbName="RULE_JSON" exculdeInsertColumns="ID" exculdeUpdateColumns="ID"/>
+    <table dbName="RULE_JSON_LOG" exculdeInsertColumns="ID,CREATE_TIME" exculdeUpdateColumns="ID"/>
+	</schema>
+</generator>
